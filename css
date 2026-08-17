@@ -1,8 +1,31 @@
-.banner-imagem {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #1e293b;
-}
+        /* BANNER HERO (Largura total de ponta a ponta) */
+        .hero-banner {
+            background: linear-gradient(135deg, #0a1628, #111e35);
+            border-bottom: 2px solid #FFA000;
+            padding: 0 0 40px 0;
+            text-align: center;
+            width: 100%;
+            margin: -20px 0 40px 0; /* Cola no topo da página */
+        }
+        .hero-banner img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 0; /* Retira o arredondamento para colar nas bordas */
+            border-bottom: 2px solid #FFA000;
+        }
+        .hero-banner h1 {
+            font-size: 36px;
+            color: #FFA000;
+            letter-spacing: 2px;
+            font-weight: 900;
+            margin-bottom: 5px;
+        }
+        .hero-banner p {
+            color: #94a3b8;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }

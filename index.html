@@ -12,23 +12,24 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #050b14; color: #ffffff; }
 
-        /* BANNER HERO NO TOPO */
+        /* BANNER HERO (De ponta a ponta no topo) */
         .hero-banner {
-            background: linear-gradient(135deg, #0a1628, #111e35);
+            background: #0a1628;
             border-bottom: 2px solid #FFA000;
-            padding: 50px 20px;
+            padding: 0 0 30px 0;
             text-align: center;
+            width: 100%;
         }
         .hero-banner img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: contain;
-            margin-bottom: 15px;
-            border: 2px solid #FFA000;
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FFA000;
         }
         .hero-banner h1 {
-            font-size: 36px;
+            font-size: 32px;
             color: #FFA000;
             letter-spacing: 2px;
             font-weight: 900;
@@ -36,7 +37,7 @@
         }
         .hero-banner p {
             color: #94a3b8;
-            font-size: 14px;
+            font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -47,36 +48,35 @@
         
         /* BLOCO 1: PRETO / TÉCNICO */
         .bloco-preto { background: #050b14; color: #ffffff; }
-        .bloco-preto h2 { font-size: 28px; color: #FFA000; margin-bottom: 20px; }
+        .bloco-preto h2 { font-size: 26px; color: #FFA000; margin-bottom: 20px; }
         .bloco-preto p { font-size: 16px; color: #cbd5e1; margin-bottom: 15px; }
         .fonte-oficial { background: rgba(255,160,0,0.1); border-left: 4px solid #FFA000; padding: 12px; font-size: 13px; color: #FFCA28; margin-top: 20px; }
         .fonte-oficial a { color: #FFA000; text-decoration: underline; }
 
         /* BLOCO 2: BRANCO / CONTEXTO */
         .bloco-branco { background: #ffffff; color: #1e293b; }
-        .bloco-branco h2 { font-size: 26px; color: #0a1628; margin-bottom: 20px; }
+        .bloco-branco h2 { font-size: 24px; color: #0a1628; margin-bottom: 20px; }
         .bloco-branco p { font-size: 16px; color: #334155; margin-bottom: 15px; }
 
         /* BLOCO 3: LILÁS / ANÁLISE TÉCNICA */
         .bloco-lilas { background: #f3e8ff; color: #581c87; border-left: 6px solid #9333ea; }
-        .bloco-lilas h2 { font-size: 26px; margin-bottom: 20px; color: #6b21a8; }
+        .bloco-lilas h2 { font-size: 24px; margin-bottom: 20px; color: #6b21a8; }
         .bloco-lilas p { font-size: 16px; color: #4c1d95; margin-bottom: 15px; }
 
         /* BLOCO 4: LARANJA / O CONFRONTO (CUSTOS E MERCADO) */
         .bloco-laranja { background: #fff7ed; color: #9a3412; border-left: 6px solid #f97316; }
-        .bloco-laranja h2 { font-size: 26px; margin-bottom: 20px; color: #c2410c; }
+        .bloco-laranja h2 { font-size: 24px; margin-bottom: 20px; color: #c2410c; }
         .bloco-laranja p { font-size: 16px; color: #9a3412; margin-bottom: 15px; }
 
         /* BLOCO 5: AZUL MARINHO / CTA */
         .bloco-azul { background: #0a1628; color: #ffffff; text-align: center; padding: 60px 20px; }
-        .bloco-azul h2 { font-size: 28px; color: #FFA000; margin-bottom: 15px; }
+        .bloco-azul h2 { font-size: 26px; color: #FFA000; margin-bottom: 15px; }
         .bloco-azul p { font-size: 16px; color: #cbd5e1; max-width: 600px; margin: 0 auto 25px; }
         
         .btn-acao {
             display: inline-block;
             background: linear-gradient(135deg, #FFA000, #FF3D00);
-            color: #000000;
-            padding: 15px 35px;
+            color: #000000;padding: 15px 35px;
             border-radius: 30px;
             text-decoration: none;
             font-weight: bold;
@@ -90,26 +90,10 @@
     </style>
 </head>
 <body>
-<!-- BANNER HERO -->
-    <div class="hero-banner">
-            <!-- BANNER HERO -->
-    <div class="hero-banner">
-        <!-- Cole a linha da imagem aqui embaixo -->
-        <body>
 
-    <!-- 1. O BANNER FICA FORA, COLADO NO TOPO DA TELA DE PONTA A PONTA -->
+    <!-- BANNER HERO (De ponta a ponta no topo) -->
     <div class="hero-banner">
-        <img src="banner-topo.jpg" alt="Banner Sidmarkting Blog" style="width: 100%; max-height: 350px; object-fit: cover; display: block; border-bottom: 2px solid #FFA000;">
-        <h1 style="color: #FFA000; font-size: 28px; margin-top: 15px;">SIDMARKTING BLOG</h1>
-        <p style="color: #94a3b8; font-size: 13px; text-transform: uppercase;">Inteligência Artificial e Negócios Digitais</p>
-    </div>
-
-    <!-- 2. O RESTO DO CONTEÚDO DO BLOG FICA DENTRO DA CAIXA CENTRALIZADA -->
-    <div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
-        <!-- Aqui começa o Bloco 1, Bloco 2, etc. -->
-        <h1>SIDMARKTING BLOG</h1>
-        <p>Inteligência Artificial, Engenharia de Software e Negócios Digitais</p>
-    </div>
+        <img src="banner-topo.jpg" alt="Banner Sidmarkting Blog">
         <h1>SIDMARKTING BLOG</h1>
         <p>Inteligência Artificial, Engenharia de Software e Negócios Digitais</p>
     </div>
@@ -148,15 +132,15 @@
     <!-- BLOCO 4: LARANJA (O Confronto: Custos e Realidade) -->
     <div class="bloco bloco-laranja">
         <div class="conteudo-central">
-            <h2>O Confronto: Custos Elevados vs. Realidade do Empreendedor</h2>
-            <p>Enquanto gigantes gastam milhões de dólares processando bilhões de tokens para rodar simulações de comportamento em supercomputadores, o pequeno e médio empreendedor local (a pizzaria, a oficina, a clínica) sofre com um problema muito mais básico: <strong>sua ausência digital ou um site que demora 5 segundos para carregar</strong>.</p>
+            <h2>O Confronto: Custos Elevados vs. Realidade do Empreendedor</h2><p>Enquanto gigantes gastam milhões de dólares processando bilhões de tokens para rodar simulações de comportamento em supercomputadores, o pequeno e médio empreendedor local (a pizzaria, a oficina, a clínica) sofre com um problema muito mais básico: <strong>sua ausência digital ou um site que demora 5 segundos para carregar</strong>.</p>
             <p>Enquanto o Vale do Silício debate personas sintéticas, o mercado real exige velocidade, códigos otimizados, páginas responsivas e automações práticas que convertam visitantes em clientes no WhatsApp hoje.</p>
         </div>
     </div>
 
     <!-- BLOCO 5: AZUL MARINHO (CTA Final) -->
     <div class="bloco bloco-azul">
-        <div class="conteudo-central"><h2>Garanta Que Seu Negócio Esteja Preparado para o Futuro</h2>
+        <div class="conteudo-central">
+            <h2>Garanta Que Seu Negócio Esteja Preparado para o Futuro</h2>
             <p>Enquanto a tecnologia avança exponencialmente, certifique-se de que a base digital da sua empresa seja sólida, veloz e focada em resultados reais.</p>
             <a href="https://sidmarkting-sites-oficiais-sxdt.vercel.app/" target="_blank" class="btn-acao">
                 🚀 Conheça Nossas Soluções Digitais
